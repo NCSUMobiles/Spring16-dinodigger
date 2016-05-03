@@ -1,0 +1,27 @@
+﻿using UnityEngine;
+using System.Collections;
+
+public class ScoreBoard : MonoBehaviour {
+	public static int bones = 0;
+    public static bool finalMsg = false;
+	void OnGUI () {
+		// Make a background box
+		GUIStyle box = new GUIStyle(GUI.skin.box);
+		box.fontSize = 20;
+		GUI.skin.box = box;
+		if (bones < 5 && !finalMsg) {
+			GUI.Box (new Rect ((Screen.width/4)-90, (Screen.height/2)-150, 180, 40), "Bones collected " + bones + "/5");
+		}
+		else if(!finalMsg){
+			GUI.Box(new Rect((Screen.width / 4) - 90, (Screen.height / 2) - 150, 215, 65), "All bones collected.\nYou may go to the tent" );
+		}
+
+
+		if (bones < 5 && !finalMsg) {
+			GUI.Box (new Rect ((3*Screen.width/4) -90, (Screen.height/2)-150, 180, 40), "Bones collected " + bones + "/5");
+		}
+		else if (!finalMsg){
+			GUI.Box(new Rect((3 * Screen.width / 4) - 90, (Screen.height / 2) - 150, 215, 65), "All bones collected.\nYou may go to the tent");
+		}
+	}
+}

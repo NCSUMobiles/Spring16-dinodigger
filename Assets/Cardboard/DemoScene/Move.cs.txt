@@ -1,0 +1,16 @@
+using UnityEngine;
+using System.Collections;
+
+[RequireComponent(typeof(Collider))]
+public class Move : MonoBehaviour {
+    public PlayerObject player;
+
+    public void sendTargetToPlayer() {
+        float x = this.transform.position.x;
+        float y = this.transform.position.y;
+        float z = this.transform.position.z;
+
+        string targetStr = x.ToString() + " " + y.ToString() + " " +z.ToString();
+        player.movePlayer(targetStr);
+    }
+}

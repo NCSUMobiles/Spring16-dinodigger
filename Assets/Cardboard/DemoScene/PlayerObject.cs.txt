@@ -1,0 +1,35 @@
+using UnityEngine;
+using System.Collections;
+
+public class PlayerObject : MonoBehaviour {
+    private bool isPlayerMoving;
+    public float speed = 5;
+    private Vector3 targetPosition;
+
+	// Use this for initialization
+	void Start () {
+        isPlayerMoving = false;
+	}
+	
+	// Update is called once per frame
+	void Update () {
+	    if (isPlayerMoving == true) {
+            float step = speed * Time.deltaTime;
+            this.transform.position = Vector3.MoveTowards(this.transform.position, targetPosition, step);
+            if (this.transform.position == targetPosition) {
+                isPlayerMoving = false;
+            }
+        }
+	}
+
+    public void movePlayer(string xyz) {
+        string[] vectors = xyz.Split(' ');
+
+        if (isPlayerMoving == false) {
+            targetPosition.x = float.Parse(vectors[0]);
+            targetPosition.y = float.Parse(vectors[1]);
+            targetPosition.z = float.Parse(vectors[2]);
+            isPlayerMoving = true;
+        }
+    }
+}

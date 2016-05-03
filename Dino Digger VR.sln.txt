@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{E0621529-2B8E-BDC0-C6C1-A1D3B33DD895}") = "Dino Digger VR", "Assembly-CSharp.csproj", "{4B339DCC-07D1-1DC7-F58A-B9947D610BDC}"
+EndProject
+Project("{E0621529-2B8E-BDC0-C6C1-A1D3B33DD895}") = "Dino Digger VR", "Assembly-CSharp-Editor.csproj", "{0229E09A-BC00-73EA-E83F-20993F1B0B13}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4B339DCC-07D1-1DC7-F58A-B9947D610BDC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B339DCC-07D1-1DC7-F58A-B9947D610BDC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B339DCC-07D1-1DC7-F58A-B9947D610BDC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B339DCC-07D1-1DC7-F58A-B9947D610BDC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0229E09A-BC00-73EA-E83F-20993F1B0B13}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0229E09A-BC00-73EA-E83F-20993F1B0B13}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0229E09A-BC00-73EA-E83F-20993F1B0B13}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0229E09A-BC00-73EA-E83F-20993F1B0B13}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
